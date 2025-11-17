@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Key Concepts | IT3203 Web Project</title>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav" aria-label="Main navigation">
+  <a class="logo" href="index.html">IT3203 Web Project</a>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="topic-http.html">HTTP Basics</a></li>
+    <li><a href="topic-http3.html">HTTP/3 &amp; QUIC</a></li>
+    <li><a href="key-concepts.html">Key Concepts</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+<section class="content">
+  <h1>Key Concepts</h1>
+  <dl class="concepts">
+    <dt id="semantics">Semantics</dt>
+    <dd>The meaning of methods, status codes, and headers.</dd>
+
+    <dt id="idempotency">Idempotency</dt>
+    <dd>Repeated requests have the same effect (e.g., PUT/DELETE).</dd>
+
+    <dt id="caching">Caching</dt>
+    <dd>Reduce latency using validators like ETag and Last‑Modified.</dd>
+
+    <dt id="tls">TLS</dt>
+    <dd>Encryption/authentication for HTTPS; protects integrity and privacy.</dd>
+
+    <dt id="cdn">CDN</dt>
+    <dd>Distributed network that serves content near users for lower latency.</dd>
+
+    <dt id="quic">QUIC</dt>
+    <dd>UDP-based transport enabling HTTP/3 with stream-level flow control.</dd>
+
+    <dt id="hov">Head‑of‑Line Blocking</dt>
+    <dd>TCP issue where one lost packet stalls others; QUIC mitigates it.</dd>
+  </dl>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Miles Johnson — IT 3203 Project (Milestone #2)</p>
+  <p class="note">This website is a class project for
+    <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">KSU IT 3203 Web Development</a>.
+  </p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

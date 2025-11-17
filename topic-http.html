@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTTP Basics | IT3203 Web Project</title>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav" aria-label="Main navigation">
+  <a class="logo" href="index.html">IT3203 Web Project</a>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="topic-http.html">HTTP Basics</a></li>
+    <li><a href="topic-http3.html">HTTP/3 &amp; QUIC</a></li>
+    <li><a href="key-concepts.html">Key Concepts</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+<article class="content">
+  <h1 id="basics">HTTP Basics</h1>
+  <p>
+    HTTP is an application-layer protocol using a request/response model. Clients send a request line, headers,
+    and an optional body; servers reply with a status line, headers, and an optional body.
+  </p>
+
+  <h2>Methods &amp; Semantics</h2>
+  <ul>
+    <li><strong>GET</strong> — retrieve a resource (safe, idempotent).</li>
+    <li><strong>POST</strong> — submit data changes (not idempotent).</li>
+    <li><strong>PUT</strong> — replace a resource (idempotent).</li>
+    <li><strong>PATCH</strong> — partial update.</li>
+    <li><strong>DELETE</strong> — remove a resource (idempotent).</li>
+    <li><strong>HEAD</strong> — headers only (check metadata).</li>
+  </ul>
+
+  <h2>Status Codes</h2>
+  <table>
+    <thead><tr><th>Code</th><th>Class</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>200</td><td>2xx</td><td>OK</td></tr>
+      <tr><td>204</td><td>2xx</td><td>No Content</td></tr>
+      <tr><td>301</td><td>3xx</td><td>Moved Permanently</td></tr>
+      <tr><td>304</td><td>3xx</td><td>Not Modified (cache)</td></tr>
+      <tr><td>404</td><td>4xx</td><td>Not Found</td></tr>
+      <tr><td>429</td><td>4xx</td><td>Too Many Requests</td></tr>
+      <tr><td>500</td><td>5xx</td><td>Internal Server Error</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Headers &amp; Caching</h2>
+  <p>
+    Common headers: <code>Content-Type</code>, <code>Accept</code>, <code>Authorization</code>.
+    Cache headers: <code>Cache-Control</code>, <code>ETag</code>, <code>Last-Modified</code> enable conditional requests.
+  </p>
+</article>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Miles Johnson — IT 3203 Project (Milestone #2)</p>
+  <p class="note">This website is a class project for
+    <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">KSU IT 3203 Web Development</a>.
+  </p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

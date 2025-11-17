@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | IT3203 Web Project</title>
+  <meta name="description" content="HTTP study site with quiz and references"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav" aria-label="Main navigation">
+  <a class="logo" href="index.html">IT3203 Web Project</a>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="topic-http.html">HTTP Basics</a></li>
+    <li><a href="topic-http3.html">HTTP/3 &amp; QUIC</a></li>
+    <li><a href="key-concepts.html">Key Concepts</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+<header class="hero">
+  <h1>HTTP &amp; the Modern Web</h1>
+  <p class="tagline">An evolving study site on HTTP/1.1 → HTTP/3, with a built‑in self‑assessment quiz.</p>
+  <p class="toc-note">Use the table of contents to navigate each section.</p>
+</header>
+
+<section class="grid">
+  <article class="card">
+    <h2>Abstract</h2>
+    <p>
+      This site summarizes HTTP semantics and performance from HTTP/1.1 to HTTP/3/QUIC,
+      including methods, status codes, caching, TLS, and transport behavior. Milestone #2 adds
+      a quiz that grades answers immediately on the same page and provides per‑question feedback.
+    </p>
+  </article>
+
+  <aside class="card">
+    <h2>Key Terms</h2>
+    <ul>
+      <li>HTTP, HTTPS</li>
+      <li>TLS</li>
+      <li>Headers</li>
+      <li>Caching</li>
+      <li>HTTP/2 Multiplexing</li>
+      <li>HTTP/3 &amp; QUIC</li>
+    </ul>
+  </aside>
+
+  <article class="card span-2">
+    <h2>Table of Contents</h2>
+    <table class="toc">
+      <thead><tr><th>Section</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td><a href="topic-http.html">HTTP Basics</a></td><td>Methods, status codes, headers</td></tr>
+        <tr><td><a href="topic-http3.html">HTTP/3 &amp; QUIC</a></td><td>Transport changes and latency</td></tr>
+        <tr><td><a href="key-concepts.html">Key Concepts</a></td><td>Glossary of foundational terms</td></tr>
+        <tr><td><a href="references.html">References</a></td><td>Learning resources and specs</td></tr>
+        <tr><td><a href="quiz.html">Quiz</a></td><td>Self‑assessment with scoring and feedback</td></tr>
+        <tr><td><a href="about.html">About</a></td><td>Student profile and project notes</td></tr>
+      </tbody>
+    </table>
+  </article>
+
+  <figure class="card span-2">
+    <img src="placeholder.svg" alt="Stylized diagram of client-server HTTP request/response" class="responsive-img">
+    <figcaption>Figure: Conceptual flow from browser (client) to server via HTTP.</figcaption>
+  </figure>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Miles Johnson — IT 3203 Project (Milestone #2)</p>
+  <p class="note">This website is a class project for
+    <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">KSU IT 3203 Web Development</a>.
+  </p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
